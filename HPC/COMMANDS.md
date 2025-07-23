@@ -15,5 +15,7 @@ grep ./*.out "keyword" -l
 
 #### File sizes
 ```sh
-du -h ./
+du -h ./file.txt # for single file
+du -h ./ # for all files in folder
+du -sh ./ # for whole folder size
 ```

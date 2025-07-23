@@ -29,3 +29,12 @@ logging.basicConfig(
     level=logging.INFO, 
     format='%(asctime)s - %(levelname)s - %(message)s')
 ```
+
+### Standard Out and Error Files
+It is best practice to separate your python output text streams into two different files, one for errors and one for everything else. 
+Here's how you run a python script and pipe your outputs.
+```sh
+python -u myscript.py > std.out 2> std.err
+```
+The `-u` flag means unbuffered output, ensuring that all outputs are sent immediately to those files. If you want to buffer the output (only
+update output files after script is done), then you can omit that flag.
