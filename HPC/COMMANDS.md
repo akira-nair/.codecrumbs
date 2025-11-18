@@ -19,3 +19,8 @@ du -h ./file.txt # for single file
 du -h ./ # for all files in folder
 du -sh ./ # for whole folder size
 ```
+
+#### Tar Compress a folder
+```
+tar -czvf output.tar.gz /path/to/folder_or_file
+```
